@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Box, makeStyles, Button } from "@material-ui/core";
+import { Typography, Grid, Box, Button } from "@material-ui/core";
 import Carousel from "react-multi-carousel";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
