@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginTop: "10px",
       width: "100%",
-      marginTop: "-528px",
     },
   },
 }));

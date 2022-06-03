@@ -26,14 +26,8 @@ const responsive = {
     items: 1,
   },
 };
-const useStyles = makeStyles({
-  firstSectionHeading: {
-    color: "white",
-    marginTop: "20px",
-  },
-});
+
 export default function SectionFour() {
-  const classes = useStyles();
   return (
     <>
       <Box

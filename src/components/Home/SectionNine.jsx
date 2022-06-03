@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Box, makeStyles } from "@material-ui/core";
+import { Typography, Grid, Box } from "@material-ui/core";
 import sec9img1 from "../../assets/images/sec9img1.png";
 import sec9img2 from "../../assets/images/sec9img2.png";
 import sec9img3 from "../../assets/images/sec9img3.png";
