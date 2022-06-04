@@ -27,10 +27,50 @@ const useStyles = makeStyles((theme) => ({
   vector1Img:{
     
     [theme.breakpoints.down("sm")]: {
-      marginTop: "150px",
+      marginTop: "125px",
       width:200,
+      position:"relative",
+      top:"-129px",
+      left:"-31px",
     },
-  }
+    [theme.breakpoints.down("md")]: {
+      marginTop: "125px",
+      width:300,
+      position:"relative",
+      top:"-129px",
+      left:"-21px",
+    }
+  },
+    vector2Img:{
+      marginTop: "-256px",
+      marginLeft: "20px",
+      [theme.breakpoints.down("sm")]: {
+        marginTop: "-257px",
+        height:162,
+        marginLeft:"-11px"
+      },
+      [theme.breakpoints.down("md")]: {
+        marginTop: "-257px",
+        height:200,
+        marginLeft:"-3px"
+      },
+    },
+      MoreVertIcon:{
+        
+        [theme.breakpoints.down("sm")]: {
+          marginTop: "-100px",
+        },
+      },
+      Section1Right:{
+        height: "auto",
+        width: "90%",
+        marginTop: "-197px",
+        [theme.breakpoints.down("md")]: {
+          marginTop: "-238px",
+          
+        }
+      }
+  
 }));
 export default function SectionOne() {
   const classes = useStyles();
@@ -113,36 +153,29 @@ export default function SectionOne() {
                   src={vector1}
                 />
                 <Box
-                  className={classes.Section1Right}
                   sx={{ display: "flex", justifyContent: "right" }}
                 >
                   <Box
                     component="img"
                     sx={{
-                      height: "auto",
-                      width: "90%",
-                      marginTop: "-197px",
+                     
                     }}
+                    className={classes.Section1Right}
                     alt="Your logo."
                     src={sec1Right}
                   />
-
+                  <Box className={classes.MoreVertIcon}>
                   <MoreVertIcon
-                    sx={{
-                      fontSize: "35px",
-                      position: "relative",
-                      top: "10px",
-                      color: "white",
-                    }}
+                  sx={{ color: "white",fontSize:"35px"}}
+                    
                   />
+                  </Box>
                 </Box>
 
                 <Box
                   component="img"
-                  sx={{
-                    marginTop: "-256px",
-                    marginLeft: "20px",
-                  }}
+                  
+                  className={classes.vector2Img}
                   alt="vector2"
                   src={vector2}
                 />

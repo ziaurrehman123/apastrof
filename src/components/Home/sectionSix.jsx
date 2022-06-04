@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   sec3img: {
     marginTop: "-528px",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "10px",
+      marginTop: "-528px",
       width: "100%",
     },
   },

@@ -194,7 +194,7 @@ export default function Header() {
 
         <div>{femmecubatorLogo}</div>
         <div style={{ display: "flex", marginLeft: "auto" }}>
-          <Box>
+          <Box sx={{textAlign:"center", marginTop:"-14px"}}> 
             <Link
               href="#"
               style={{
@@ -209,7 +209,7 @@ export default function Header() {
               Login
             </Link>
 
-            <Button variant="outlined">Create Account</Button>
+            <Button variant="outlined" style={{marginTop:"7px"}}>Create Account</Button>
           </Box>
         </div>
       </Toolbar>

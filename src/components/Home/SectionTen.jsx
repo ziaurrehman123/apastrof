@@ -30,12 +30,32 @@ const responsive = {
     items: 1,
   },
 };
-const useStyles = makeStyles({
-  firstSectionHeading: {
-    color: "white",
-    marginTop: "20px",
+const useStyles = makeStyles((theme) => ({
+  sec10img1:{
+    width: 80,
+    height: 80,
+    position: "relative",
+    top: "102px",
+    left: "-28px",
+    paddingTop: "20px",
+    [theme.breakpoints.down("sm")]: {
+      top: "170px",
+      left: "-14px",
+    },
   },
-});
+  sec10img2:{
+    width: 80,
+    height: 80,
+    position: "relative",
+    top: "108px",
+    left: "28px",
+    paddingTop: "20px",
+    [theme.breakpoints.down("sm")]: {
+      top: "170px",
+      left: "14px",
+    },
+  }
+}));
 export default function SectionTen() {
   const classes = useStyles();
   return (
@@ -69,14 +89,8 @@ export default function SectionTen() {
               <Box>
                 <Box
                   component="img"
-                  sx={{
-                    width: 80,
-                    height: 80,
-                    position: "relative",
-                    top: "102px",
-                    left: "-28px",
-                    paddingTop: "20px",
-                  }}
+                  
+                  className={classes.sec10img1}
                   alt="vector2"
                   src={sec10img1}
                 />
@@ -194,11 +208,19 @@ export default function SectionTen() {
 
           <div style={{ width: "90%", margin: "auto" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Box sx={{ textAlign: "right" }}>
+                <Box
+                  component="img"
+                  className={classes.sec10img2}
+                  alt="vector2"
+                  src={sec10img2}
+                />
+              </Box>
               <Card
                 style={{
                   borderRadius: "20px",
                   marginBottom: "10px",
-                  marginTop: "48px",
+                  marginTop: "-56px",
                 }}
               >
                 <CardActionArea>
@@ -302,21 +324,7 @@ export default function SectionTen() {
                   </Box>
                 </CardActionArea>
               </Card>
-              <Box sx={{ textAlign: "right" }}>
-                <Box
-                  component="img"
-                  sx={{
-                    width: 80,
-                    height: 80,
-                    position: "relative",
-                    top: "-192px",
-                    left: "28px",
-                    paddingTop: "20px",
-                  }}
-                  alt="vector2"
-                  src={sec10img2}
-                />
-              </Box>
+             
             </Grid>
           </div>
           <div style={{ width: "90%", margin: "auto" }}>
@@ -324,14 +332,8 @@ export default function SectionTen() {
               <Box>
                 <Box
                   component="img"
-                  sx={{
-                    width: 80,
-                    height: 80,
-                    position: "relative",
-                    top: "102px",
-                    left: "-28px",
-                    paddingTop: "20px",
-                  }}
+                  
+                  className={classes.sec10img1}
                   alt="vector2"
                   src={sec10img1}
                 />
@@ -449,11 +451,19 @@ export default function SectionTen() {
 
           <div style={{ width: "90%", margin: "auto" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Box sx={{ textAlign: "right" }}>
+                <Box
+                  component="img"
+                  className={classes.sec10img2}
+                  alt="vector2"
+                  src={sec10img2}
+                />
+              </Box>
               <Card
                 style={{
                   borderRadius: "20px",
                   marginBottom: "10px",
-                  marginTop: "48px",
+                  marginTop: "-56px",
                 }}
               >
                 <CardActionArea>
@@ -557,21 +567,7 @@ export default function SectionTen() {
                   </Box>
                 </CardActionArea>
               </Card>
-              <Box sx={{ textAlign: "right" }}>
-                <Box
-                  component="img"
-                  sx={{
-                    width: 80,
-                    height: 80,
-                    position: "relative",
-                    top: "-192px",
-                    left: "28px",
-                    paddingTop: "20px",
-                  }}
-                  alt="vector2"
-                  src={sec10img2}
-                />
-              </Box>
+             
             </Grid>
           </div>
         </Carousel>
