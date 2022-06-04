@@ -26,19 +26,12 @@ const useStyles = makeStyles((theme) => ({
   },
   vector1Img:{
     
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "125px",
-      width:200,
-      position:"relative",
-      top:"-129px",
-      left:"-31px",
-    },
     [theme.breakpoints.down("md")]: {
       marginTop: "125px",
       width:300,
       position:"relative",
       top:"-129px",
-      left:"-21px",
+      left:"-33px",
     }
   },
     vector2Img:{
@@ -52,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down("md")]: {
         marginTop: "-257px",
         height:200,
-        marginLeft:"-3px"
+        marginLeft:"-13px"
       },
     },
       MoreVertIcon:{
