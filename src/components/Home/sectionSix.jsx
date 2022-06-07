@@ -1,18 +1,9 @@
 import React from "react";
 import { Typography, Grid, Box, makeStyles } from "@material-ui/core";
-import sec3img from "../../assets/images/sec3img.png";
-import sec3img1 from "../../assets/images/sec3img1.png";
+import sec6img from "../../assets/images/sec6img.png";
 const useStyles = makeStyles((theme) => ({
-  sec3img1: {
+  sec6img: {
     [theme.breakpoints.down("sm")]: {
-      marginTop: "10px",
-      width: "100%",
-    },
-  },
-  sec3img: {
-    marginTop: "-528px",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "-528px",
       width: "100%",
     },
   },
@@ -23,7 +14,6 @@ export default function SectionSix() {
     <>
       <Box
         sx={{
-          
           paddingTop: "70px",
         }}
       >
@@ -33,16 +23,9 @@ export default function SectionSix() {
               <Box sx={{ textAlign: "center" }}>
                 <Box
                   component="img"
-                  sx={{}}
+                  className={classes.sec6img}
                   alt="vector1"
-                  src={sec3img1}
-                  className={classes.sec3img1}
-                />
-                <Box
-                  component="img"
-                  className={classes.sec3img}
-                  alt="vector1"
-                  src={sec3img}
+                  src={sec6img}
                 />
               </Box>
             </Grid>
@@ -67,7 +50,9 @@ export default function SectionSix() {
                   Showcase Your Projects, to International Investors
                 </Typography>
                 <Typography style={{ fontSize: "20px", fontWeight: "400" }}>
-                The Apastrof Platform allows you to make added value for your businesses and by putting your project in a network of interconnected services offered to global investors.
+                  The Apastrof Platform allows you to make added value for your
+                  businesses and by putting your project in a network of
+                  interconnected services offered to global investors.
                 </Typography>
                 <Box sx={{ marginTop: "40px" }}>
                   <Grid container spacing={2}>

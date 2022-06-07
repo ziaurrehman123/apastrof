@@ -1,22 +1,9 @@
 import React from "react";
 import { Typography, Grid, Box, Button, makeStyles } from "@material-ui/core";
-import sec3img from "../../assets/images/sec3img.png";
-import sec5img from "../../assets/images/sec5img.png";
+import sec7img from "../../assets/images/sec7img.png";
 const useStyles = makeStyles((theme) => ({
-  sec5img: {
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "10px",
-      width: "100%",
-    },
-  },
   sec3img: {
-    marginTop: "-528px",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "-528px",
-      width: "100%",
-    },
-    [theme.breakpoints.down("md")]: {
-      marginTop: "-528px",
       width: "100%",
     },
   },
@@ -134,15 +121,8 @@ export default function SectionSeven() {
               <Box sx={{ textAlign: "center" }}>
                 <Box
                   component="img"
-                  sx={{}}
                   alt="vector1"
-                  src={sec5img}
-                  className={classes.sec5img}
-                />
-                <Box
-                  component="img"
-                  alt="vector1"
-                  src={sec3img}
+                  src={sec7img}
                   className={classes.sec3img}
                 />
               </Box>

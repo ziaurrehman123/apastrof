@@ -9,8 +9,6 @@ import {
 } from "@material-ui/core";
 import sec1Right from "../../assets/images/sec1right.png";
 import imageFile from "../../assets/images/sec1bg.png";
-import vector1 from "../../assets/images/vector1.png";
-import vector2 from "../../assets/images/vector2.png";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 const useStyles = makeStyles((theme) => ({
   firstSectionHeading: {
@@ -24,46 +22,13 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     marginTop: "20px",
   },
-  vector1Img:{
-    
-    [theme.breakpoints.down("md")]: {
-      marginTop: "125px",
-      width:300,
-      position:"relative",
-      top:"-129px",
-      left:"-33px",
-    }
+  MoreVertIcon: {
+    marginTop: "200px",
   },
-    vector2Img:{
-      marginTop: "-256px",
-      marginLeft: "20px",
-      [theme.breakpoints.down("sm")]: {
-        marginTop: "-257px",
-        height:162,
-        marginLeft:"-11px"
-      },
-      [theme.breakpoints.down("md")]: {
-        marginTop: "-257px",
-        height:200,
-        marginLeft:"-13px"
-      },
-    },
-      MoreVertIcon:{
-        
-        [theme.breakpoints.down("sm")]: {
-          marginTop: "-100px",
-        },
-      },
-      Section1Right:{
-        height: "auto",
-        width: "90%",
-        marginTop: "-197px",
-        [theme.breakpoints.down("md")]: {
-          marginTop: "-238px",
-          
-        }
-      }
-  
+  Section1Right: {
+    height: "auto",
+    width: "90%",
+  },
 }));
 export default function SectionOne() {
   const classes = useStyles();
@@ -135,43 +100,18 @@ export default function SectionOne() {
             </Grid>
             <Grid item sm={12} xs={12} md={6} lg={6} xl={6}>
               <Box className={classes.rightSection}>
-                <Box
-                  component="img"
-                  sx={{
-                    zIndex: 1,
-                    marginLeft: "20px",
-                  }}
-                  className={classes.vector1Img}
-                  alt="vector1"
-                  src={vector1}
-                />
-                <Box
-                  sx={{ display: "flex", justifyContent: "right" }}
-                >
+                <Box sx={{ display: "flex", justifyContent: "right" }}>
                   <Box
                     component="img"
-                    sx={{
-                     
-                    }}
+                    sx={{}}
                     className={classes.Section1Right}
                     alt="Your logo."
                     src={sec1Right}
                   />
                   <Box className={classes.MoreVertIcon}>
-                  <MoreVertIcon
-                  sx={{ color: "white",fontSize:"35px"}}
-                    
-                  />
+                    <MoreVertIcon sx={{ color: "white", fontSize: "35px" }} />
                   </Box>
                 </Box>
-
-                <Box
-                  component="img"
-                  
-                  className={classes.vector2Img}
-                  alt="vector2"
-                  src={vector2}
-                />
               </Box>
             </Grid>
           </Grid>

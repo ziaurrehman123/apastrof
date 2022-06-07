@@ -1,19 +1,10 @@
 import React from "react";
 import { Typography, Grid, Box, makeStyles } from "@material-ui/core";
 import sec3img from "../../assets/images/sec3img.png";
-import sec3img1 from "../../assets/images/sec3img1.png";
 const useStyles = makeStyles((theme) => ({
-  sec3img1: {
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "10px",
-      width: "100%",
-    },
-  },
   sec3img: {
-    marginTop: "-528px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      marginTop: "-528px",
     },
   },
 }));
@@ -31,13 +22,6 @@ export default function SectionThree() {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
               <Box sx={{ textAlign: "center" }}>
-                <Box
-                  component="img"
-                  sx={{}}
-                  alt="vector1"
-                  src={sec3img1}
-                  className={classes.sec3img1}
-                />
                 <Box
                   component="img"
                   className={classes.sec3img}

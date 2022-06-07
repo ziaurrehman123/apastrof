@@ -134,16 +134,9 @@ export default function SectionFive() {
               <Box sx={{ textAlign: "center" }}>
                 <Box
                   component="img"
-                  sx={{}}
                   alt="vector1"
                   src={sec5img}
                   className={classes.sec5img}
-                />
-                <Box
-                  component="img"
-                  alt="vector1"
-                  src={sec3img}
-                  className={classes.sec3img}
                 />
               </Box>
             </Grid>
