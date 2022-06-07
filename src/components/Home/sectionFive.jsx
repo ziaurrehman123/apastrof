@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Grid, Box, Button, makeStyles } from "@material-ui/core";
-import sec3img from "../../assets/images/sec3img.png";
 import sec5img from "../../assets/images/sec5img.png";
 const useStyles = makeStyles((theme) => ({
   sec5img: {
