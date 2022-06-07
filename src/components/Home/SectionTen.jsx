@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     width: 80,
     height: 80,
     position: "relative",
-    top: "102px",
+    top: "108px",
     left: "-28px",
     paddingTop: "20px",
     [theme.breakpoints.down("sm")]: {

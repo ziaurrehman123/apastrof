@@ -8,17 +8,6 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
-  sec3img: {
-    marginTop: "-528px",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "-528px",
-      width: "100%",
-    },
-    [theme.breakpoints.down("md")]: {
-      marginTop: "-528px",
-      width: "100%",
-    },
-  },
 }));
 export default function SectionFive() {
   const classes = useStyles();
