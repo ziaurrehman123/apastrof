@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Typography, Grid, Box, makeStyles } from "@material-ui/core";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 import sec6img from "../../assets/images/sec6img.png";
 const useStyles = makeStyles((theme) => ({
   sec6img: {
@@ -7,8 +9,19 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
+  contentBox: {
+    marginTop: "100px",
+    textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+      marginTop: "10px",
+    },
+  },
 }));
 export default function SectionSix() {
+  const [selected, setSelected] = useState(false);
+  const [selected1, setSelected1] = useState(false);
+  const [selected2, setSelected2] = useState(false);
   const classes = useStyles();
   return (
     <>
@@ -30,7 +43,7 @@ export default function SectionSix() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-              <Box sx={{ marginTop: "100px" }}>
+              <Box className={classes.contentBox}>
                 <Typography
                   style={{
                     fontSize: "22px",
@@ -54,52 +67,51 @@ export default function SectionSix() {
                   businesses and by putting your project in a network of
                   interconnected services offered to global investors.
                 </Typography>
-                <Box sx={{ marginTop: "40px" }}>
-                  <Grid container spacing={2}>
-                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                      <Box
-                        sx={{
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          padding: "5px 10px 5px 10px",
-                          borderRadius: "3px",
-                          width: "auto",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Typography>#Business_For_Sale</Typography>
-                      </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                      <Box
-                        sx={{
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          padding: "5px 10px 5px 10px",
-                          borderRadius: "3px",
-                          width: "auto",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Typography>#Investment_Opportunity</Typography>
-                      </Box>
-                    </Grid>
-                  </Grid>
+
+                <Box sx={{ marginTop: "40px", marginBottom: "10px" }}>
+                  <Stack style={{ display: "block" }}>
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
+                      onClick={() => setSelected((s) => !s)}
+                      color={selected ? "default" : "primary"}
+                      variant={selected ? "outlined" : "default"}
+                      label="#Business_For_Sale"
+                    />
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
+                      onClick={() => setSelected1((s) => !s)}
+                      color={selected1 ? "default" : "primary"}
+                      variant={selected1 ? "outlined" : "default"}
+                      label="#Investment_Opportunity  "
+                    />
+                  </Stack>
                 </Box>
-                <Box sx={{ marginTop: "10p" }}>
-                  <Grid container spacing={2}>
-                    <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                      <Box
-                        sx={{
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          padding: "5px 10px 5px 10px",
-                          borderRadius: "3px",
-                          width: "auto",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Typography>#Residency_By_Investment</Typography>
-                      </Box>
-                    </Grid>
-                  </Grid>
+                <Box style={{marginBottom:"30px"}}>
+                  <Stack style={{ display: "block" }}>
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                      }}
+                      onClick={() => setSelected2((s) => !s)}
+                      color={selected2 ? "default" : "primary"}
+                      variant={selected2 ? "outlined" : "default"}
+                      label="#Residency_By_Investment"
+                    />
+                  </Stack>
                 </Box>
               </Box>
             </Grid>

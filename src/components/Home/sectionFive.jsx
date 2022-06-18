@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { Typography, Grid, Box, Button, makeStyles } from "@material-ui/core";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 import sec5img from "../../assets/images/sec5img.png";
 const useStyles = makeStyles((theme) => ({
   sec5img: {
@@ -8,8 +10,20 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
+  contentBox:{
+    marginTop:"100px",
+    textAlign:"left",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "5px",
+      textAlign:"center",
+    },
+  }
 }));
 export default function SectionFive() {
+  const [selected, setSelected] = useState(false);
+  const [selected1, setSelected1] = useState(false);
+  const [selected2, setSelected2] = useState(false);
+  const [selected3, setSelected3] = useState(false);
   const classes = useStyles();
   return (
     <>
@@ -22,7 +36,7 @@ export default function SectionFive() {
         <Box sx={{ width: "90%", margin: "auto" }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-              <Box sx={{ marginTop: "100px" }}>
+              <Box className={classes.contentBox}>
                 <Typography
                   style={{
                     fontSize: "22px",
@@ -46,65 +60,44 @@ export default function SectionFive() {
                   to programs at educational institutions that meet your needs,
                   and start your study abroad journey!
                 </Typography>
-                <Box sx={{ marginTop: "40px" }}>
-                  <Grid container spacing={2}>
-                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                      <Box
-                        sx={{
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          padding: "5px 10px 5px 10px",
-                          borderRadius: "3px",
-                          width: "auto",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Typography>#Offshore_Bank_Account</Typography>
-                      </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                      <Box
-                        sx={{
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          padding: "5px 10px 5px 10px",
-                          borderRadius: "3px",
-                          width: "auto",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Typography>#Company_Registration</Typography>
-                      </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                      <Box
-                        sx={{
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          padding: "5px 10px 5px 10px",
-                          borderRadius: "3px",
-                          width: "auto",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Typography>#Shelf-Company</Typography>
-                      </Box>
-                    </Grid>
-                  </Grid>
-                </Box>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                    <Box
-                      sx={{
-                        backgroundColor: "rgba(65, 179, 117, 0.37)",
-                        padding: "5px 10px 5px 10px",
-                        borderRadius: "3px",
-                        marginTop: "10px",
-                        width: "auto",
-                        textAlign: "center",
-                      }}
-                    >
-                      <Typography>#Offshore_Trust</Typography>
-                    </Box>
-                  </Grid>
-                </Grid>
+                <Box style={{marginTop:"40px"}}>
+                <Stack  style={{display:"block"}}>
+                    <Chip 
+                    style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black", marginRight:"10px", marginTop:"10px" }}
+                      onClick={() => setSelected((s) => !s)}
+                      color={selected ? "default" : "primary"}
+                      variant={selected ? "outlined" : "default"}
+                      label="#Offshore_Bank_Account"
+                    />
+                      <Chip
+                      style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black",marginRight:"10px", marginTop:"10px" }}
+                      onClick={() => setSelected1((s) => !s)}
+                      color={selected1 ? "default" : "primary"}
+                      variant={selected1 ? "outlined" : "default"}
+                      label="#Company_Registration"
+                    />
+                      <Chip
+                      style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black", marginRight:"10px", marginTop:"10px"}}
+                      onClick={() => setSelected2((s) => !s)}
+                      color={selected2 ? "default" : "primary"}
+                      variant={selected2 ? "outlined" : "default"}
+                      label="#Shelf-Company"
+                    />
+                  </Stack>
+                  </Box>
+                  <Box style={{marginTop:"10px"}}>
+                <Stack style={{display:"block"}}>
+                    <Chip 
+                    style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black", }}
+                      onClick={() => setSelected3((s) => !s)}
+                      color={selected3 ? "default" : "primary"}
+                      variant={selected3 ? "outlined" : "default"}
+                      label="#Offshore_Trust"
+                    />
+                
+                  </Stack>
+                  </Box>
+              
                 <Button
                   variant="contained"
                   style={{

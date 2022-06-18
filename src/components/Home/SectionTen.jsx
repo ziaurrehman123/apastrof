@@ -3,12 +3,12 @@ import { Typography, Grid, Box, makeStyles } from "@material-ui/core";
 import Carousel from "react-multi-carousel";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import sec10img1 from "../../assets/images/sec10img1.png";
 import sec10img2 from "../../assets/images/sec10img2.png";
-import facebook from "../../assets/images/facebook.png";
-import whatsapp from "../../assets/images/whatsapp.png";
-import twitter from "../../assets/images/twitter.png";
-import insta from "../../assets/images/insta.png";
 import { CardActionArea } from "@mui/material";
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
@@ -31,7 +31,7 @@ const responsive = {
   },
 };
 const useStyles = makeStyles((theme) => ({
-  sec10img1:{
+  sec10img1: {
     width: 80,
     height: 80,
     position: "relative",
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
       left: "-14px",
     },
   },
-  sec10img2:{
+  sec10img2: {
     width: 80,
     height: 80,
     position: "relative",
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       top: "170px",
       left: "14px",
     },
-  }
+  },
 }));
 export default function SectionTen() {
   const classes = useStyles();
@@ -83,13 +83,12 @@ export default function SectionTen() {
         </Typography>
       </Box>
       <Box sx={{ width: "80%", margin: "auto", paddingBottom: "60px" }}>
-        <Carousel responsive={responsive}>
+        <Carousel responsive={responsive} showDots={true}>
           <div style={{ width: "90%", margin: "auto" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <Box>
                 <Box
                   component="img"
-                  
                   className={classes.sec10img1}
                   alt="vector2"
                   src={sec10img1}
@@ -98,7 +97,7 @@ export default function SectionTen() {
               <Card
                 style={{
                   borderRadius: "20px",
-                  marginBottom: "10px",
+                  marginBottom: "50px",
                   marginTop: "-56px",
                 }}
               >
@@ -139,12 +138,12 @@ export default function SectionTen() {
                             borderRadius: "50px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={facebook}
-                            sx={{ marginTop: "7px", marginLeft: "11px" }}
+                          <FacebookIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -156,12 +155,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={whatsapp}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <WhatsAppIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -173,12 +172,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={twitter}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <TwitterIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -190,12 +189,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={insta}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <InstagramIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                       </Box>
@@ -208,7 +207,7 @@ export default function SectionTen() {
 
           <div style={{ width: "90%", margin: "auto" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <Box sx={{ textAlign: "right" }}>
+              <Box sx={{ textAlign: "right" }}>
                 <Box
                   component="img"
                   className={classes.sec10img2}
@@ -219,7 +218,7 @@ export default function SectionTen() {
               <Card
                 style={{
                   borderRadius: "20px",
-                  marginBottom: "10px",
+                  marginBottom: "50px",
                   marginTop: "-56px",
                 }}
               >
@@ -260,12 +259,12 @@ export default function SectionTen() {
                             borderRadius: "50px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={facebook}
-                            sx={{ marginTop: "7px", marginLeft: "11px" }}
+                          <FacebookIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -277,12 +276,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={whatsapp}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <WhatsAppIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -294,12 +293,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={twitter}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <TwitterIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -311,12 +310,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={insta}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <InstagramIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                       </Box>
@@ -324,7 +323,6 @@ export default function SectionTen() {
                   </Box>
                 </CardActionArea>
               </Card>
-             
             </Grid>
           </div>
           <div style={{ width: "90%", margin: "auto" }}>
@@ -332,7 +330,6 @@ export default function SectionTen() {
               <Box>
                 <Box
                   component="img"
-                  
                   className={classes.sec10img1}
                   alt="vector2"
                   src={sec10img1}
@@ -341,7 +338,7 @@ export default function SectionTen() {
               <Card
                 style={{
                   borderRadius: "20px",
-                  marginBottom: "10px",
+                  marginBottom: "50px",
                   marginTop: "-56px",
                 }}
               >
@@ -382,12 +379,12 @@ export default function SectionTen() {
                             borderRadius: "50px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={facebook}
-                            sx={{ marginTop: "7px", marginLeft: "11px" }}
+                          <FacebookIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -399,12 +396,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={whatsapp}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <WhatsAppIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -416,12 +413,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={twitter}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <TwitterIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -433,12 +430,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={insta}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <InstagramIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                       </Box>
@@ -451,7 +448,7 @@ export default function SectionTen() {
 
           <div style={{ width: "90%", margin: "auto" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <Box sx={{ textAlign: "right" }}>
+              <Box sx={{ textAlign: "right" }}>
                 <Box
                   component="img"
                   className={classes.sec10img2}
@@ -462,7 +459,7 @@ export default function SectionTen() {
               <Card
                 style={{
                   borderRadius: "20px",
-                  marginBottom: "10px",
+                  marginBottom: "50px",
                   marginTop: "-56px",
                 }}
               >
@@ -503,12 +500,12 @@ export default function SectionTen() {
                             borderRadius: "50px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={facebook}
-                            sx={{ marginTop: "7px", marginLeft: "11px" }}
+                          <FacebookIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -520,12 +517,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={whatsapp}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <WhatsAppIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -537,12 +534,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={twitter}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <TwitterIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                         <Box
@@ -554,12 +551,12 @@ export default function SectionTen() {
                             marginLeft: "10px",
                           }}
                         >
-                          <Box
-                            component="img"
-                            className={classes.sec3img}
-                            alt="vector1"
-                            src={insta}
-                            sx={{ marginTop: "7px", marginLeft: "8px" }}
+                          <InstagramIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
                           />
                         </Box>
                       </Box>
@@ -567,7 +564,6 @@ export default function SectionTen() {
                   </Box>
                 </CardActionArea>
               </Card>
-             
             </Grid>
           </div>
         </Carousel>

@@ -7,10 +7,10 @@ import {
   Link,
 } from "@material-ui/core";
 import Logo from "../assets/images/footerlogo.png";
-import facebook from "../assets/images/facebook.png";
-import whatsapp from "../assets/images/whatsapp.png";
-import twitter from "../assets/images/twitter.png";
-import insta from "../assets/images/insta.png";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import imageFile from "../assets/images/sec1bg.png";
 
 const useStyles = makeStyles((theme) => ({}));
@@ -43,7 +43,7 @@ export default function Footer() {
                   component="img"
                   sx={{
                     height: 40,
-                    width: 100,
+                    width: 140,
                   }}
                   alt="Your logo."
                   src={Logo}
@@ -56,79 +56,79 @@ export default function Footer() {
                 Growth opportunities around the world.
               </Typography>
               <Box
-                sx={{
-                  paddingTop: "20px",
-                  display: "flex",
-                }}
-              >
-                <Box
-                  sx={{
-                    width: "30px",
-                    height: "30px",
-                    backgroundColor: "white",
-                    borderRadius: "50px",
-                  }}
-                >
-                  <Box
-                    component="img"
-                    className={classes.sec3img}
-                    alt="vector1"
-                    src={facebook}
-                    sx={{ marginTop: "7px", marginLeft: "11px" }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    width: "30px",
-                    height: "30px",
-                    backgroundColor: "white",
-                    borderRadius: "50px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  <Box
-                    component="img"
-                    className={classes.sec3img}
-                    alt="vector1"
-                    src={whatsapp}
-                    sx={{ marginTop: "7px", marginLeft: "8px" }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    width: "30px",
-                    height: "30px",
-                    backgroundColor: "white",
-                    borderRadius: "50px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  <Box
-                    component="img"
-                    className={classes.sec3img}
-                    alt="vector1"
-                    src={twitter}
-                    sx={{ marginTop: "7px", marginLeft: "8px" }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    width: "30px",
-                    height: "30px",
-                    backgroundColor: "white",
-                    borderRadius: "50px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  <Box
-                    component="img"
-                    className={classes.sec3img}
-                    alt="vector1"
-                    src={insta}
-                    sx={{ marginTop: "7px", marginLeft: "8px" }}
-                  />
-                </Box>
-              </Box>
+                        sx={{
+                          paddingTop: "20px",
+                          display: "flex",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            width: "30px",
+                            height: "30px",
+                            backgroundColor: "white",
+                            borderRadius: "50px",
+                          }}
+                        >
+                          <FacebookIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
+                          />
+                        </Box>
+                        <Box
+                          sx={{
+                            width: "30px",
+                            height: "30px",
+                            backgroundColor: "white",
+                            borderRadius: "50px",
+                            marginLeft: "10px",
+                          }}
+                        >
+                          <WhatsAppIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
+                          />
+                        </Box>
+                        <Box
+                          sx={{
+                            width: "30px",
+                            height: "30px",
+                            backgroundColor: "white",
+                            borderRadius: "50px",
+                            marginLeft: "10px",
+                          }}
+                        >
+                          <TwitterIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
+                          />
+                        </Box>
+                        <Box
+                          sx={{
+                            width: "30px",
+                            height: "30px",
+                            backgroundColor: "white",
+                            borderRadius: "50px",
+                            marginLeft: "10px",
+                          }}
+                        >
+                          <InstagramIcon
+                            sx={{
+                              marginTop: "6px",
+                              marginLeft: "6px",
+                              fontSize: "18px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={2} lg={2} xl={2}>
               <Typography

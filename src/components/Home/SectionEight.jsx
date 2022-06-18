@@ -34,7 +34,7 @@ export default function SectionEight() {
     <>
       <Box
         sx={{
-          width: "90%",
+          width: "80%",
           margin: "auto",
           paddingBottom: "60px",
           paddingTop: "60px",

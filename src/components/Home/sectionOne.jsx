@@ -14,13 +14,26 @@ const useStyles = makeStyles((theme) => ({
   firstSectionHeading: {
     color: "white",
     marginTop: "20px",
+    textAlign:"left",
+    [theme.breakpoints.down("sm")]: {
+      textAlign:"center",
+      fontSize:"30px"
+    },
   },
   firstSectionSubHeading: {
     color: "white",
+    textAlign:"left",
+    [theme.breakpoints.down("sm")]: {
+      textAlign:"center"
+    },
   },
   firstSectionContent: {
     color: "white",
     marginTop: "20px",
+    textAlign:"left",
+    [theme.breakpoints.down("sm")]: {
+      textAlign:"center"
+    },
   },
   MoreVertIcon: {
     marginTop: "200px",
@@ -29,6 +42,22 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     width: "90%",
   },
+  buttonsBox:{
+textAlign:"left",
+[theme.breakpoints.down("sm")]: {
+  textAlign:"center"
+},
+  },
+  mainSection:{
+    paddingTop: "160px",
+    paddingBottom: "60px",
+    width: "90%",
+    margin: "auto",
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: "100px",
+    },
+  },
+
 }));
 export default function SectionOne() {
   const classes = useStyles();
@@ -44,12 +73,7 @@ export default function SectionOne() {
         }}
       >
         <Box
-          sx={{
-            paddingTop: "160px",
-            paddingBottom: "60px",
-            width: "90%",
-            margin: "auto",
-          }}
+         
           className={classes.mainSection}
         >
           <Grid container>
@@ -74,12 +98,12 @@ export default function SectionOne() {
                   Apastrof connects international Businessmen to Advisors and
                   Growth opportunities around the world.
                 </Typography>
-                <Box sx={{ marginTop: "30px", marginBottom: "30px" }}>
+                <Box sx={{ marginTop: "30px", marginBottom: "30px"}} className={classes.buttonsBox}>
                   <Button
                     variant="contained"
                     style={{
                       color: "white",
-                      backgroundColor: "#41B375",
+                      background: "linear-gradient(89.8deg, #1CC9A5 0.17%, #41B375 99.85%)",
                       textTransform: "capitalize",
                     }}
                   >

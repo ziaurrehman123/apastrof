@@ -4,6 +4,7 @@ import {
   Grid,
   Box,
   Button,
+  makeStyles,
 } from "@material-ui/core";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -11,8 +12,15 @@ import icon1 from "../../assets/images/icon1.png";
 import icon2 from "../../assets/images/icon2.png";
 import icon3 from "../../assets/images/icon3.png";
 import { CardActionArea } from "@mui/material";
-
+const useStyles = makeStyles((theme) => ({
+  cardStyle: {
+    borderRadius:"20px",
+    height:"100%",
+    
+  },
+}));
 export default function SectionOne() {
+  const classes = useStyles();
   return (
     <>
       <Box
@@ -25,7 +33,7 @@ export default function SectionOne() {
       >
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-            <Card style={{borderRadius:"20px"}}>
+          <Card className={classes.cardStyle}>
               <CardActionArea>
                 <Box sx={{ textAlign: "center", width: "90%", margin: "auto" }}>
                   <Box
@@ -59,7 +67,7 @@ export default function SectionOne() {
                     variant="contained"
                     style={{
                       color: "white",
-                      backgroundColor: "#41B375",
+                      background: "linear-gradient(180deg, #19656B 0%, #41B375 100%)",
                       textTransform: "capitalize",
                       marginTop:"20px",
                       padding:"5px 30px 5px 30px",
@@ -73,7 +81,7 @@ export default function SectionOne() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-            <Card style={{borderRadius:"20px"}}>
+          <Card className={classes.cardStyle}>
               <CardActionArea>
                 <Box sx={{ textAlign: "center", width: "90%", margin: "auto" }}>
                   <Box
@@ -105,7 +113,7 @@ export default function SectionOne() {
                     variant="contained"
                     style={{
                       color: "white",
-                      backgroundColor: "#41B375",
+                      background: "linear-gradient(180deg, #19656B 0%, #41B375 100%)",
                       textTransform: "capitalize",
                       marginTop:"20px",
                       padding:"5px 30px 5px 30px",
@@ -119,7 +127,7 @@ export default function SectionOne() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-            <Card style={{borderRadius:"20px"}}>
+            <Card className={classes.cardStyle}>
               <CardActionArea>
                 <Box sx={{ textAlign: "center", width: "90%", margin: "auto" }}>
                   <Box
@@ -151,7 +159,7 @@ export default function SectionOne() {
                     variant="contained"
                     style={{
                       color: "white",
-                      backgroundColor: "#41B375",
+                      background: "linear-gradient(180deg, #19656B 0%, #41B375 100%)",
                       textTransform: "capitalize",
                       marginTop:"20px",
                       padding:"5px 30px 5px 30px",

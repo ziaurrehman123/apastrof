@@ -12,7 +12,7 @@ export default function SectionNine() {
     <>
       <Box
         sx={{
-          width: "87%",
+          width: "80%",
           margin: "auto",
           paddingBottom: "60px",
           paddingTop: "60px",
