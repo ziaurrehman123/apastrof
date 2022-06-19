@@ -14,7 +14,6 @@ import icon3 from "../../assets/images/icon3.png";
 import { CardActionArea } from "@mui/material";
 const useStyles = makeStyles((theme) => ({
   cardStyle: {
-    borderRadius:"20px",
     height:"100%",
     
   },
@@ -33,7 +32,7 @@ export default function SectionOne() {
       >
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Card className={classes.cardStyle}>
+          <Card className={classes.cardStyle} style={{borderRadius:"20px"}} >
               <CardActionArea>
                 <Box sx={{ textAlign: "center", width: "90%", margin: "auto" }}>
                   <Box
@@ -81,7 +80,7 @@ export default function SectionOne() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Card className={classes.cardStyle}>
+          <Card className={classes.cardStyle} style={{borderRadius:"20px"}} >
               <CardActionArea>
                 <Box sx={{ textAlign: "center", width: "90%", margin: "auto" }}>
                   <Box
@@ -127,7 +126,7 @@ export default function SectionOne() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-            <Card className={classes.cardStyle}>
+          <Card className={classes.cardStyle} style={{borderRadius:"20px"}} >
               <CardActionArea>
                 <Box sx={{ textAlign: "center", width: "90%", margin: "auto" }}>
                   <Box

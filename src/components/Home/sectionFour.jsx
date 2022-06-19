@@ -59,7 +59,6 @@ export default function SectionFour() {
                 style={{
                   borderRadius: "20px",
                   marginBottom: "10px",
-                  backgroundColor: "#808080",
                 }}
               >
                 <CardActionArea>
@@ -119,7 +118,64 @@ export default function SectionFour() {
                 style={{
                   borderRadius: "20px",
                   marginBottom: "10px",
-                  backgroundColor: "#808080",
+                }}
+              >
+                <CardActionArea>
+                  <Box
+                    sx={{ textAlign: "center", width: "90%", margin: "auto" }}
+                  >
+                    <Box
+                      component="img"
+                      sx={{
+                        width: 60,
+                        height: 60,
+                        paddingTop: "20px",
+                      }}
+                      alt="vector2"
+                      src={icon1}
+                    />
+
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        style={{
+                          color: "#41B375",
+                          fontSize: "18px",
+                          fontWeight: "700",
+                        }}
+                      >
+                        BUSINESSMAN
+                      </Typography>
+                      <Typography
+                        style={{ fontSize: "18px", fontWeight: "400" }}
+                      >
+                        Find the investment that fits your needs, know about all
+                        hidden costs and make contracts with verified local
+                        advisory firms.
+                      </Typography>
+                      <Button
+                        variant="contained"
+                        style={{
+                          color: "white",
+                          backgroundColor: "#41B375",
+                          textTransform: "capitalize",
+                          marginTop: "20px",
+                          padding: "5px 30px 5px 30px",
+                        }}
+                      >
+                        View More
+                      </Button>
+                    </CardContent>
+                  </Box>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </div>
+          <div style={{ width: "90%", margin: "auto" }}>
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+              <Card
+                style={{
+                  borderRadius: "20px",
                 }}
               >
                 <CardActionArea>
@@ -179,7 +235,6 @@ export default function SectionFour() {
                 style={{
                   borderRadius: "20px",
                   marginBottom: "10px",
-                  backgroundColor: "#808080",
                 }}
               >
                 <CardActionArea>
@@ -233,186 +288,7 @@ export default function SectionFour() {
               </Card>
             </Grid>
           </div>
-          <div style={{ width: "90%", margin: "auto" }}>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <Card
-                style={{
-                  borderRadius: "20px",
-                  marginBottom: "10px",
-                  backgroundColor: "#808080",
-                }}
-              >
-                <CardActionArea>
-                  <Box
-                    sx={{ textAlign: "center", width: "90%", margin: "auto" }}
-                  >
-                    <Box
-                      component="img"
-                      sx={{
-                        width: 60,
-                        height: 60,
-                        paddingTop: "20px",
-                      }}
-                      alt="vector2"
-                      src={icon1}
-                    />
-
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        style={{
-                          color: "#41B375",
-                          fontSize: "18px",
-                          fontWeight: "700",
-                        }}
-                      >
-                        BUSINESSMAN
-                      </Typography>
-                      <Typography
-                        style={{ fontSize: "18px", fontWeight: "400" }}
-                      >
-                        Find the investment that fits your needs, know about all
-                        hidden costs and make contracts with verified local
-                        advisory firms.
-                      </Typography>
-                      <Button
-                        variant="contained"
-                        style={{
-                          color: "white",
-                          backgroundColor: "#41B375",
-                          textTransform: "capitalize",
-                          marginTop: "20px",
-                          padding: "5px 30px 5px 30px",
-                        }}
-                      >
-                        View More
-                      </Button>
-                    </CardContent>
-                  </Box>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          </div>
-          <div style={{ width: "90%", margin: "auto" }}>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <Card
-                style={{
-                  borderRadius: "20px",
-                  marginBottom: "10px",
-                  backgroundColor: "#808080",
-                }}
-              >
-                <CardActionArea>
-                  <Box
-                    sx={{ textAlign: "center", width: "90%", margin: "auto" }}
-                  >
-                    <Box
-                      component="img"
-                      sx={{
-                        width: 60,
-                        height: 60,
-                        paddingTop: "20px",
-                      }}
-                      alt="vector2"
-                      src={icon1}
-                    />
-
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        style={{
-                          color: "#41B375",
-                          fontSize: "18px",
-                          fontWeight: "700",
-                        }}
-                      >
-                        BUSINESSMAN
-                      </Typography>
-                      <Typography
-                        style={{ fontSize: "18px", fontWeight: "400" }}
-                      >
-                        Find the investment that fits your needs, know about all
-                        hidden costs and make contracts with verified local
-                        advisory firms.
-                      </Typography>
-                      <Button
-                        variant="contained"
-                        style={{
-                          color: "white",
-                          backgroundColor: "#41B375",
-                          textTransform: "capitalize",
-                          marginTop: "20px",
-                          padding: "5px 30px 5px 30px",
-                        }}
-                      >
-                        View More
-                      </Button>
-                    </CardContent>
-                  </Box>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          </div>
-          <div style={{ width: "90%", margin: "auto" }}>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <Card
-                style={{
-                  borderRadius: "20px",
-                  marginBottom: "10px",
-                  backgroundColor: "#808080",
-                }}
-              >
-                <CardActionArea>
-                  <Box
-                    sx={{ textAlign: "center", width: "90%", margin: "auto" }}
-                  >
-                    <Box
-                      component="img"
-                      sx={{
-                        width: 60,
-                        height: 60,
-                        paddingTop: "20px",
-                      }}
-                      alt="vector2"
-                      src={icon1}
-                    />
-
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        style={{
-                          color: "#41B375",
-                          fontSize: "18px",
-                          fontWeight: "700",
-                        }}
-                      >
-                        BUSINESSMAN
-                      </Typography>
-                      <Typography
-                        style={{ fontSize: "18px", fontWeight: "400" }}
-                      >
-                        Find the investment that fits your needs, know about all
-                        hidden costs and make contracts with verified local
-                        advisory firms.
-                      </Typography>
-                      <Button
-                        variant="contained"
-                        style={{
-                          color: "white",
-                          backgroundColor: "#41B375",
-                          textTransform: "capitalize",
-                          marginTop: "20px",
-                          padding: "5px 30px 5px 30px",
-                        }}
-                      >
-                        View More
-                      </Button>
-                    </CardContent>
-                  </Box>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          </div>
+       
         </Carousel>
       </Box>
     </>
