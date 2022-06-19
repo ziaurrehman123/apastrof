@@ -240,7 +240,7 @@ export default function Header() {
         component="img"
         sx={{
           height: 40,
-          width: 100,
+          width: 140,
         }}
         alt="Your logo."
         src={Logo}
