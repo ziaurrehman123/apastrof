@@ -104,7 +104,7 @@ export default function SectionTen() {
                 <CardActionArea>
                   <Box sx={{ textAlign: "left", width: "90%", margin: "auto" }}>
                     <CardContent>
-                      <Box sx={{ paddingLeft: "40px" }}>
+                      <Box sx={{ paddingLeft: "20px" }}>
                         <Typography
                           gutterBottom
                           style={{
@@ -120,7 +120,7 @@ export default function SectionTen() {
                           Magna feugiat in imperdiet ut maecenas. Molestie eget
                           ultricies leo id accumsan. Faucibus turpis ut purus
                           pretium elementum. Vestibulum ante nunc aenean
-                          tristique libero montes, dictum. Mauris turpis turpis.
+                          tristique libero montes, dictum. Mauris turpis.
                         </Typography>
                       </Box>
                       <Box
@@ -361,12 +361,12 @@ export default function SectionTen() {
                           Magna feugiat in imperdiet ut maecenas. Molestie eget
                           ultricies leo id accumsan. Faucibus turpis ut purus
                           pretium elementum. Vestibulum ante nunc aenean
-                          tristique libero montes, dictum. Mauris turpis turpis.
+                          tristique libero montes, dictum. Mauris turpis.
                         </Typography>
                       </Box>
                       <Box
                         sx={{
-                          paddingLeft: "40px",
+                          paddingLeft: "20px",
                           paddingTop: "20px",
                           display: "flex",
                         }}
@@ -487,7 +487,7 @@ export default function SectionTen() {
                       </Box>
                       <Box
                         sx={{
-                          paddingLeft: "40px",
+                          paddingLeft: "20px",
                           paddingTop: "20px",
                           display: "flex",
                         }}
