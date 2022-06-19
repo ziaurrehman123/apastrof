@@ -83,7 +83,11 @@ export default function SectionTen() {
         </Typography>
       </Box>
       <Box sx={{ width: "80%", margin: "auto", paddingBottom: "60px" }}>
-        <Carousel responsive={responsive} showDots={true}>
+        <Carousel
+          responsive={responsive}
+          showDots={true}
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        >
           <div style={{ width: "90%", margin: "auto" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <Box>

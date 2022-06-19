@@ -17,6 +17,16 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "10px",
     },
   },
+  buttonStyle: {
+    color: "white",
+    backgroundColor: "#41B375",
+    textTransform: "capitalize",
+    marginTop: "30px",
+    "&:hover": {
+      backgroundColor: "white",
+      color: "#1CC9A5",
+    },
+  },
 }));
 export default function SectionSeven() {
   const [selected, setSelected] = useState(false);
@@ -100,14 +110,14 @@ export default function SectionSeven() {
                       variant={selected2 ? "outlined" : "default"}
                       label="#Shelf-Company"
                     />
-                      <Chip
-                        style={{
-                          borderRadius: "5px",
-                          backgroundColor: "rgba(65, 179, 117, 0.37)",
-                          color: "black",
-                          marginRight: "10px",
-                          marginTop: "10px",
-                        }}
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
                       onClick={() => setSelected3((s) => !s)}
                       color={selected3 ? "default" : "primary"}
                       variant={selected3 ? "outlined" : "default"}
@@ -115,16 +125,8 @@ export default function SectionSeven() {
                     />
                   </Stack>
                 </Box>
-               
-                <Button
-                  variant="contained"
-                  style={{
-                    color: "white",
-                    backgroundColor: "#41B375",
-                    textTransform: "capitalize",
-                    marginTop: "30px",
-                  }}
-                >
+
+                <Button variant="contained" className={classes.buttonStyle}>
                   See More
                 </Button>
               </Box>

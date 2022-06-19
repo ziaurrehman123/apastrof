@@ -18,6 +18,16 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
     },
   },
+  buttonStyle: {
+    color: "white",
+    backgroundColor: "#41B375",
+    textTransform: "capitalize",
+    marginTop: "30px",
+    "&:hover": {
+      backgroundColor: "white",
+      color: "#1CC9A5",
+    },
+  },
 }));
 export default function SectionFive() {
   const [selected, setSelected] = useState(false);
@@ -117,15 +127,7 @@ export default function SectionFive() {
                   </Stack>
                 </Box>
 
-                <Button
-                  variant="contained"
-                  style={{
-                    color: "white",
-                    backgroundColor: "#41B375",
-                    textTransform: "capitalize",
-                    marginTop: "30px",
-                  }}
-                >
+                <Button variant="contained" className={classes.buttonStyle}>
                   See More
                 </Button>
               </Box>
@@ -137,6 +139,7 @@ export default function SectionFive() {
                   alt="vector1"
                   src={sec5img}
                   className={classes.sec5img}
+                  style={{ width: "100%" }}
                 />
               </Box>
             </Grid>

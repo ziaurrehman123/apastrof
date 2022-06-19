@@ -31,6 +31,15 @@ const headersData = [
 ];
 
 const useStyles = makeStyles(() => ({
+  buttonStyle: {
+    border: "1px solid #41B375",
+                    color: "#41B375",
+                    textTransform: "capitalize",
+    "&:hover": {
+      backgroundColor: "#41B375",
+      color: "#ffffff",
+    },
+  },
   header: {
     backgroundColor: "white",
     boxShadow: "none",
@@ -63,38 +72,11 @@ const useStyles = makeStyles(() => ({
   drawerContainer: {
     padding: "20px 30px",
   },
-  categorySelect: {
-    height: "50px",
-    width: "100%",
-    borderRadius: "40px",
-    backgroundColor: "white",
-    fontSize: "16px",
-    color: "grey",
-    boxShadow: "1px 1px #888888",
-  },
-  fundsInputs: {
-    marginTop: "20px",
-    width: "100%",
-    borderRadius: "5px",
-    boxShadow: "1px 1px 1px 1px #888888",
-    backgroundColor: "white",
-
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "transparent",
-      },
-      "&:hover fieldset": {
-        borderColor: "transparent",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "transparent",
-      },
-    },
-  },
+  
 }));
 
 export default function Header() {
-  const { header, menuButton, toolbar, drawerContainer } = useStyles();
+  const { header, menuButton, toolbar, drawerContainer,buttonStyle } = useStyles();
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
@@ -146,11 +128,8 @@ export default function Header() {
 
                 <Button
                   variant="outlined"
-                  style={{
-                    border: "1px solid #41B375",
-                    color: "#41B375",
-                    textTransform: "capitalize",
-                  }}
+                 
+                  className={buttonStyle}
                 >
                   Create Account
                 </Button>
@@ -209,7 +188,9 @@ export default function Header() {
               Login
             </Link>
 
-            <Button variant="outlined" style={{marginTop:"7px"}}>Create Account</Button>
+            <Button variant="outlined" style={{marginTop:"7px"}}
+            className={buttonStyle}
+            >Create Account</Button>
           </Box>
         </div>
       </Toolbar>

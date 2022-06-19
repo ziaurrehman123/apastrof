@@ -11,28 +11,37 @@ import sec1Right from "../../assets/images/sec1right.png";
 import imageFile from "../../assets/images/sec1bg.png";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 const useStyles = makeStyles((theme) => ({
+  findInvestButton: {
+    color: "white",
+    background: "linear-gradient(89.8deg, #1CC9A5 0.17%, #41B375 99.85%)",
+    textTransform: "capitalize",
+    "&:hover": {
+      background: "linear-gradient(89.8deg, #ffffff 100%, #41B375 99.85%)",
+      color: "#1CC9A5",
+    },
+  },
   firstSectionHeading: {
     color: "white",
     marginTop: "20px",
-    textAlign:"left",
+    textAlign: "left",
     [theme.breakpoints.down("sm")]: {
-      textAlign:"center",
-      fontSize:"30px"
+      textAlign: "center",
+      fontSize: "30px",
     },
   },
   firstSectionSubHeading: {
     color: "white",
-    textAlign:"left",
+    textAlign: "left",
     [theme.breakpoints.down("sm")]: {
-      textAlign:"center"
+      textAlign: "center",
     },
   },
   firstSectionContent: {
     color: "white",
     marginTop: "20px",
-    textAlign:"left",
+    textAlign: "left",
     [theme.breakpoints.down("sm")]: {
-      textAlign:"center"
+      textAlign: "center",
     },
   },
   MoreVertIcon: {
@@ -42,13 +51,13 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     width: "90%",
   },
-  buttonsBox:{
-textAlign:"left",
-[theme.breakpoints.down("sm")]: {
-  textAlign:"center"
-},
+  buttonsBox: {
+    textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+    },
   },
-  mainSection:{
+  mainSection: {
     paddingTop: "160px",
     paddingBottom: "60px",
     width: "90%",
@@ -57,7 +66,6 @@ textAlign:"left",
       paddingTop: "100px",
     },
   },
-
 }));
 export default function SectionOne() {
   const classes = useStyles();
@@ -72,10 +80,7 @@ export default function SectionOne() {
           backgroundSize: "cover",
         }}
       >
-        <Box
-         
-          className={classes.mainSection}
-        >
+        <Box className={classes.mainSection}>
           <Grid container>
             <Grid item sm={12} xs={12} md={6} lg={6} xl={6}>
               <Box className={classes.Section1Left}>
@@ -98,14 +103,13 @@ export default function SectionOne() {
                   Apastrof connects international Businessmen to Advisors and
                   Growth opportunities around the world.
                 </Typography>
-                <Box sx={{ marginTop: "30px", marginBottom: "30px"}} className={classes.buttonsBox}>
+                <Box
+                  sx={{ marginTop: "30px", marginBottom: "30px" }}
+                  className={classes.buttonsBox}
+                >
                   <Button
-                    variant="contained"
-                    style={{
-                      color: "white",
-                      background: "linear-gradient(89.8deg, #1CC9A5 0.17%, #41B375 99.85%)",
-                      textTransform: "capitalize",
-                    }}
+                    variant="outlined"
+                    className={classes.findInvestButton}
                   >
                     Find Your Investment
                   </Button>

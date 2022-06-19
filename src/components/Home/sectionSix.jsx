@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import sec6img from "../../assets/images/sec6img.png";
 const useStyles = makeStyles((theme) => ({
   sec6img: {
+    width: "100%",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
@@ -96,14 +97,14 @@ export default function SectionSix() {
                       variant={selected1 ? "outlined" : "default"}
                       label="#Investment_Opportunity  "
                     />
-                       <Chip
-                    style={{
-                      borderRadius: "5px",
-                      backgroundColor: "rgba(65, 179, 117, 0.37)",
-                      color: "black",
-                      marginRight: "10px",
-                      marginTop: "10px",
-                    }}
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
                       onClick={() => setSelected2((s) => !s)}
                       color={selected2 ? "default" : "primary"}
                       variant={selected2 ? "outlined" : "default"}
@@ -111,7 +112,6 @@ export default function SectionSix() {
                     />
                   </Stack>
                 </Box>
-               
               </Box>
             </Grid>
           </Grid>
