@@ -30,7 +30,6 @@ export default function SectionThree() {
       <Box
         sx={{
           backgroundColor: "#F6F6F6",
-          paddingTop: "40px",
           paddingBottom: "40px",
         }}
       >
