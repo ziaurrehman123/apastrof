@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Typography, Grid, Box, makeStyles } from "@material-ui/core";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import sec3img from "../../assets/images/sec3img.png";
+import ApastrofVideo from "../../assets/apastrof.mp4";
 const useStyles = makeStyles((theme) => ({
   sec3img: {
     width: "70%",
@@ -37,13 +37,10 @@ export default function SectionThree() {
         <Box sx={{ width: "90%", margin: "auto" }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-              <Box sx={{ textAlign: "center" }}>
-                <Box
-                  component="img"
-                  className={classes.sec3img}
-                  alt="vector1"
-                  src={sec3img}
-                />
+              <Box sx={{ textAlign: "center", marginTop:"50px" }}>
+              <video autoPlay loop muted className="detailsVideo" style={{width:"90%", margin:"auto", borderRadius:"10px"}}>
+          <source src={ApastrofVideo}  />
+        </video>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
