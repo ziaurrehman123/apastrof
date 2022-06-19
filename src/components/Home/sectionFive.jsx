@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Typography, Grid, Box, Button, makeStyles } from "@material-ui/core";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
@@ -10,14 +10,14 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
-  contentBox:{
-    marginTop:"100px",
-    textAlign:"left",
+  contentBox: {
+    marginTop: "100px",
+    textAlign: "left",
     [theme.breakpoints.down("sm")]: {
       marginTop: "5px",
-      textAlign:"center",
+      textAlign: "center",
     },
-  }
+  },
 }));
 export default function SectionFive() {
   const [selected, setSelected] = useState(false);
@@ -60,44 +60,63 @@ export default function SectionFive() {
                   to programs at educational institutions that meet your needs,
                   and start your study abroad journey!
                 </Typography>
-                <Box style={{marginTop:"40px"}}>
-                <Stack  style={{display:"block"}}>
-                    <Chip 
-                    style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black", marginRight:"10px", marginTop:"10px" }}
+                <Box style={{ marginTop: "40px" }}>
+                  <Stack style={{ display: "block" }}>
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
                       onClick={() => setSelected((s) => !s)}
                       color={selected ? "default" : "primary"}
                       variant={selected ? "outlined" : "default"}
                       label="#Offshore_Bank_Account"
                     />
-                      <Chip
-                      style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black",marginRight:"10px", marginTop:"10px" }}
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
                       onClick={() => setSelected1((s) => !s)}
                       color={selected1 ? "default" : "primary"}
                       variant={selected1 ? "outlined" : "default"}
                       label="#Company_Registration"
                     />
-                      <Chip
-                      style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black", marginRight:"10px", marginTop:"10px"}}
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
                       onClick={() => setSelected2((s) => !s)}
                       color={selected2 ? "default" : "primary"}
                       variant={selected2 ? "outlined" : "default"}
                       label="#Shelf-Company"
                     />
-                  </Stack>
-                  </Box>
-                  <Box style={{marginTop:"10px"}}>
-                <Stack style={{display:"block"}}>
-                    <Chip 
-                    style={{borderRadius:"5px", backgroundColor:"rgba(65, 179, 117, 0.37)", color:"black", }}
+                    <Chip
+                      style={{
+                        borderRadius: "5px",
+                        backgroundColor: "rgba(65, 179, 117, 0.37)",
+                        color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
                       onClick={() => setSelected3((s) => !s)}
                       color={selected3 ? "default" : "primary"}
                       variant={selected3 ? "outlined" : "default"}
                       label="#Offshore_Trust"
                     />
-                
                   </Stack>
-                  </Box>
-              
+                </Box>
+
                 <Button
                   variant="contained"
                   style={{

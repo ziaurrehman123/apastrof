@@ -99,15 +99,13 @@ export default function SectionThree() {
                       variant={selected1 ? "outlined" : "default"}
                       label="#Investment_Opportunity  "
                     />
-                  </Stack>
-                </Box>
-                <Box>
-                  <Stack style={{ display: "block" }}>
                     <Chip
-                      style={{
+                       style={{
                         borderRadius: "5px",
                         backgroundColor: "rgba(65, 179, 117, 0.37)",
                         color: "black",
+                        marginRight: "10px",
+                        marginTop: "10px",
                       }}
                       onClick={() => setSelected2((s) => !s)}
                       color={selected2 ? "default" : "primary"}
@@ -116,6 +114,7 @@ export default function SectionThree() {
                     />
                   </Stack>
                 </Box>
+                
               </Box>
             </Grid>
           </Grid>
