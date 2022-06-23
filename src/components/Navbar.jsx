@@ -33,8 +33,8 @@ const headersData = [
 const useStyles = makeStyles(() => ({
   buttonStyle: {
     border: "1px solid #41B375",
-                    color: "#41B375",
-                    textTransform: "capitalize",
+    color: "#41B375",
+    textTransform: "capitalize",
     "&:hover": {
       backgroundColor: "#41B375",
       color: "#ffffff",
@@ -72,11 +72,11 @@ const useStyles = makeStyles(() => ({
   drawerContainer: {
     padding: "20px 30px",
   },
-  
 }));
 
 export default function Header() {
-  const { header, menuButton, toolbar, drawerContainer,buttonStyle } = useStyles();
+  const { header, menuButton, toolbar, drawerContainer, buttonStyle } =
+    useStyles();
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
@@ -112,27 +112,27 @@ export default function Header() {
             </div>
             <div style={{ display: "flex" }}>
               <Box>
-                <Link
-                  href="#"
-                  style={{
-                    position: "relative",
-                    top: "3px",
-                    fontSize: "20px",
-                    color: "#41B375",
-                    textDecoration: "none",
-                    marginRight: "20px",
-                  }}
-                >
-                  Login
-                </Link>
+                <RouterLink to={"/login"} style={{ textDecoration: "none" }}>
+                  <Link
+                    href="#"
+                    style={{
+                      position: "relative",
+                      top: "3px",
+                      fontSize: "20px",
+                      color: "#41B375",
+                      textDecoration: "none",
+                      marginRight: "20px",
+                    }}
+                  >
+                    Login
+                  </Link>
+                </RouterLink>
 
-                <Button
-                  variant="outlined"
-                 
-                  className={buttonStyle}
-                >
-                  Create Account
-                </Button>
+                <RouterLink to={"/signup"} style={{ textDecoration: "none" }}>
+                  <Button variant="outlined" className={buttonStyle}>
+                    Create Account
+                  </Button>
+                </RouterLink>
               </Box>
             </div>
           </Box>
@@ -173,9 +173,9 @@ export default function Header() {
 
         <div>{femmecubatorLogo}</div>
         <div style={{ display: "flex", marginLeft: "auto" }}>
-          <Box sx={{textAlign:"center", marginTop:"-14px"}}> 
+          <Box sx={{ textAlign: "center", marginTop: "-14px" }}>
             <Link
-              href="#"
+              href=""
               style={{
                 position: "relative",
                 top: "3px",
@@ -188,9 +188,13 @@ export default function Header() {
               Login
             </Link>
 
-            <Button variant="outlined" style={{marginTop:"7px"}}
-            className={buttonStyle}
-            >Create Account</Button>
+            <Button
+              variant="outlined"
+              style={{ marginTop: "7px" }}
+              className={buttonStyle}
+            >
+              Create Account
+            </Button>
           </Box>
         </div>
       </Toolbar>
