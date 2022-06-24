@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -110,6 +110,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignUp() {
+  const navigate = useNavigate();
   const classes = useStyles();
   return (
     <>
@@ -184,6 +185,7 @@ export default function SignUp() {
                               fullWidth
                               className={classes.signupButton}
                               size="medium"
+                              onClick={() => navigate("/profile_details")}
                             >
                               Create Account
                             </Button>

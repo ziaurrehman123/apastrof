@@ -56,9 +56,9 @@ const useStyles = makeStyles(() => ({
     textAlign: "left",
   },
   menuButton: {
-    fontFamily: "Open Sans, sans-serif",
-    fontWeight: 400,
-    size: "20px",
+    fontFamily: "Poppins",
+    fontSize: "20px",
+    fontWeight: "400",
     marginLeft: "80px",
     textDecoration: "none",
     textTransform: "capitalize",
@@ -116,9 +116,11 @@ export default function Header() {
                   <Link
                     href="#"
                     style={{
+                      fontFamily: "Poppins",
+                      fontSize: "20px",
+                      fontWeight: "400",
                       position: "relative",
                       top: "3px",
-                      fontSize: "20px",
                       color: "#41B375",
                       textDecoration: "none",
                       marginRight: "20px",
@@ -129,7 +131,15 @@ export default function Header() {
                 </RouterLink>
 
                 <RouterLink to={"/signup"} style={{ textDecoration: "none" }}>
-                  <Button variant="outlined" className={buttonStyle}>
+                  <Button
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "12px",
+                      fontWeight: "600",
+                    }}
+                    variant="outlined"
+                    className={buttonStyle}
+                  >
                     Create Account
                   </Button>
                 </RouterLink>

@@ -21,6 +21,13 @@ const useStyles = makeStyles((theme) => ({
       color: "#1CC9A5",
     },
   },
+
+  cardHeadBtn: {
+    fontFamily: "Poppins",
+    color: "#41B375",
+    fontSize: "18px",
+    fontWeight: "700",
+  },
 }));
 export default function SectionOne() {
   const classes = useStyles();
@@ -54,14 +61,7 @@ export default function SectionOne() {
                   />
 
                   <CardContent>
-                    <Typography
-                      gutterBottom
-                      style={{
-                        color: "#41B375",
-                        fontSize: "18px",
-                        fontWeight: "700",
-                      }}
-                    >
+                    <Typography gutterBottom className={classes.cardHeadBtn}>
                       BUSINESSMAN
                     </Typography>
                     <Typography style={{ fontSize: "18px", fontWeight: "400" }}>
@@ -96,14 +96,7 @@ export default function SectionOne() {
                   />
 
                   <CardContent>
-                    <Typography
-                      gutterBottom
-                      style={{
-                        color: "#41B375",
-                        fontSize: "18px",
-                        fontWeight: "700",
-                      }}
-                    >
+                    <Typography gutterBottom className={classes.cardHeadBtn}>
                       SERVICE PROVIDER
                     </Typography>
                     <Typography style={{ fontSize: "18px", fontWeight: "400" }}>
@@ -138,14 +131,7 @@ export default function SectionOne() {
                   />
 
                   <CardContent>
-                    <Typography
-                      gutterBottom
-                      style={{
-                        color: "#41B375",
-                        fontSize: "18px",
-                        fontWeight: "700",
-                      }}
-                    >
+                    <Typography gutterBottom className={classes.cardHeadBtn}>
                       LOOKING FOR AN INVESTOR ?
                     </Typography>
                     <Typography style={{ fontSize: "18px", fontWeight: "400" }}>

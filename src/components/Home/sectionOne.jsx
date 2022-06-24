@@ -12,6 +12,9 @@ import imageFile from "../../assets/images/sec1bg.png";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 const useStyles = makeStyles((theme) => ({
   findInvestButton: {
+    fontFamily: "Poppins",
+    fontWeight: "600",
+    fontSize: "12px",
     color: "white",
     background: "linear-gradient(89.8deg, #1CC9A5 0.17%, #41B375 99.85%)",
     textTransform: "capitalize",
@@ -32,11 +35,16 @@ const useStyles = makeStyles((theme) => ({
   firstSectionSubHeading: {
     color: "white",
     textAlign: "left",
+    fontFamily: "Voces",
+    fontStyle: "normal",
+    fontWeight: "400",
+    fontSize: "35px",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
     },
   },
   firstSectionContent: {
+    fontFamily: "Poppins",
     color: "white",
     marginTop: "20px",
     textAlign: "left",
@@ -94,7 +102,7 @@ export default function SectionOne() {
                   variant="h5"
                   className={classes.firstSectionSubHeading}
                 >
-                  government subsidies
+                  Government Subsidies
                 </Typography>
                 <Typography
                   variant="body1"
@@ -116,6 +124,9 @@ export default function SectionOne() {
                   <Link
                     href="#"
                     style={{
+                      fontFamily: "Poppins",
+                      fontWeight: "600",
+                      fontSize: "12px",
                       textDecoration: "none",
                       color: "white",
                       marginLeft: "20px",
